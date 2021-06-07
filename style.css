@@ -2,16 +2,6 @@
     padding: 0;
     margin: 0;
 }
-/* .websitecontainer{
-    display:flex;
-    flex-direction: column;
-    position:absolute;
-    width:70%;
-    height: 100%;
-    left:50%;
-    transform: translate(-50%,0);
-    background-color: red;
-} */
 .header-container{
     position:relative;
     left:50%;
@@ -26,23 +16,14 @@
     height: 100%;
     animation-name: moonanimation;
     }
-/* #moontint{
-    display: flex;
-    position: relative;
-    height: 100%;
-    width:100%;
-    background-color: rgba(214, 214, 214, 0.884);
-    z-index: +1;
-} */
 .bodycontainer{
 display: flex;
 flex-direction: column;
 position:relative;
 width:93%;
-height:50vh;
+height:100vh;
 left:50%;
 transform: translate(-50%,0);
-background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 #title{
@@ -56,6 +37,25 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
     font-size:40px;
     text-decoration: underline;
 }
-@keyframes  moonanimation{
-    
+.imageholder{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:5%;
+    width:70%;
+    height:80%;
+    left:50%;
+    transform: translate(-50%,0);
+    background-color: red;
+}
+#frontimg{
+    position: relative;
+    top:50%;
+    left:50%;
+    width:100%;
+    transform: translate(-50%,-35%);
+}
+#leftimg{
+    position: relative;
+    left:20%;
 }
