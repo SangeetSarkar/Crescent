@@ -4,4 +4,4 @@ let date = n.getDate();
 let month = n.getMonth();
 let year = n.getFullYear();
 document.getElementById('datecontent').innerHTML = "Date : " + date + '/' + month + '/' + year;
-document.addEventListener('click',rightarrowclick)
+document.addEventListener('click',rightarrowclick);
