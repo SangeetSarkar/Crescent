@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crescent</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -16,8 +17,35 @@
 
     <div class="bodycontainer">
         <div id="title">Moon Phase</div>
+        <div id="rightarrow">
+            <span class="material-icons right">
+                chevron_right
+            </span>
+        </div>
+        <div id="leftarrow">
+            <span class="material-icons left">
+                chevron_left
+            </span>
+        </div>
+        <div class="imageholder">
+            <div id="frontimg">
+                <img src="Images/full.jpg" alt="Image Not Supported"
+                    style="width:50vh; height:50vh; top:10vh; box-shadow: 1px 1px 10px 10px white;border-radius:5vh">
+            </div>
+            <!-- <div id="leftimg">
+                <img src="Images/waning-g.jpg" alt="Image not supported"
+                    style=" width:30vh; height:30vh; top:10vh;z-index: -1;opacity: 0.6;">
+            </div> -->
+            <div id="rightimg">
+                <img id="waningg" src="Images/waning-q.jpg" alt="Image not supported">
+            </div>
+            <div id="displaydetails">
+                <div id="phase">Full Moon</div>
+                <div id="datecontent"></div>
+            </div>
+        </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

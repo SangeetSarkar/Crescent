@@ -2,16 +2,6 @@
     padding: 0;
     margin: 0;
 }
-/* .websitecontainer{
-    display:flex;
-    flex-direction: column;
-    position:absolute;
-    width:70%;
-    height: 100%;
-    left:50%;
-    transform: translate(-50%,0);
-    background-color: red;
-} */
 .header-container{
     position:relative;
     left:50%;
@@ -24,26 +14,19 @@
     position: relative;
     width:100%;
     height: 100%;
-    animation-name: moonanimation;
+    /* animation-name: moonanimation; */
     }
-/* #moontint{
-    display: flex;
-    position: relative;
-    height: 100%;
-    width:100%;
-    background-color: rgba(214, 214, 214, 0.884);
-    z-index: +1;
-} */
 .bodycontainer{
 display: flex;
 flex-direction: column;
 position:relative;
+top:5vh;
 width:93%;
-height:50vh;
+height:100vh;
 left:50%;
 transform: translate(-50%,0);
-background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+z-index: +1;
 }
 #title{
     position: relative;
@@ -53,9 +36,144 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
     text-align: center;
     transform:translate(-50%,0);
     color:white;
-    font-size:40px;
+    font-size:4vh;
     text-decoration: underline;
 }
-@keyframes  moonanimation{
-    
+.imageholder{
+    /* display: flex;
+    flex-direction: row; */
+    position: relative;
+    top:50%;
+    left:50%;
+    width:80%;
+    height:80%;
+    left:50%;
+    transform: translate(-50%,-55%);
 }
+#frontimg{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:50vh;
+    height: 50vh;
+    box-shadow: 10px white;
+    transform: translate(-50%,-50%);
+    z-index: +1;
+}
+/* #leftimg{
+    position: relative;
+    top:30%;
+    left:-11%;
+    width:14vw;
+    height: 30vh;
+} */
+#rightimg{
+    position: absolute;
+    top:30%;
+    left:90vh;
+    width:14vw;
+    height: 30vh;
+    animation-name:none;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+#waningg{
+    position: absolute;
+    max-width:100%; 
+    height:auto; 
+    z-index: -1;
+    opacity: 0.6;
+    border-radius:5vh;
+    animation-name: waningganimation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#displaydetails{
+    position:absolute;
+    flex-direction: column;
+    top:67vh;
+    left:50%;
+    width:25vw;
+    height:10vh;
+    transform:translate(-50%,0);
+    border-radius: 10vh;
+    background-color: rgba(255, 255, 255, 0.829);
+}
+#phase{
+    position: relative;
+    top:10%;
+    width:100%;
+    height:4vh;
+    text-align: center;
+}
+#datecontent{
+    position: relative;
+    text-align: center;
+    left:50%;
+    top:1vh;
+    width:90%;
+    transform: translate(-50%,-20%);
+}
+#rightarrow{
+    position: absolute;
+    top:45%;
+    left:75vw;
+    width:5vh;
+    height:5vh;
+    color: white;
+    z-index: +1;
+}
+.right{
+     position: absolute;
+    color: white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#rightarrow:hover{
+    cursor: pointer;
+    background-color: #A6A6A6;
+    border-radius: 50%;
+}
+
+#leftarrow{
+    position: absolute;
+    top:45%;
+    left:15vw;
+    width:5vh;
+    height:5vh;
+    color: white;
+    z-index: +1;
+}
+.left{
+     position: absolute;
+    color: white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#leftarrow:hover{
+    cursor: pointer;
+    background-color: #A6A6A6;
+    border-radius: 50%;
+}
+/* @keyframes waningganimation {
+    100%{
+        
+        opacity:1;
+        width:50vh;
+        height: 50vh;
+    }
+} */
+@keyframes rightimganiamtion{
+    100%{
+        left:50%;
+        z-index: +1;
+        top:50%;
+        width:50vh;
+        height:50vh;
+        box-shadow: 10px white;
+        transform: translate(-50%,-50%);
+    }
+} 
